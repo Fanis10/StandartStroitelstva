@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+</head>
+
+
+<body>
+	<div class="wrap">
+
+		<div class="container">
+			<ul class="list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="organization.html">Организация</a></li>
+				<li><a href="geodesy.html">Геодезия</a></li>
+				<li><a href="geology.html">Геология</a></li>
+				<li><a href="ecology.html">Экология</a></li>
+				<li><a href="vacancy.html">Вакансии</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+				<li>
+					<button style="width: 300px;" class="btn-blue" data-modal="contactModal">
+						<span>Модальное окно</span>
+					</button>
+				</li>
+				<li>
+					<button style="width: 300px;" class="btn-blue" data-modal="contactModal">
+						<span>Модальное окно 2</span>
+					</button>
+				</li>
+				<li>
+					<button style="width: 300px;" class="btn-blue" data-modal="contactModal3">
+						<span>Модальное окно 3</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<div class="modal" id="contactModal">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/menu-close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__title">Обратный звонок</div>
+				<div class="modal__subtitle">Оставьте Ваши данные и мы свяжемся с Вами</div>
+				<form class="modal__form form">
+					<fieldset class="modal__form-group form-group">
+						<input type="text" placeholder="Введите Ваше имя">
+					</fieldset>
+					<fieldset class="modal__form-group form-group">
+						<input type="tel" placeholder="Введите Ваш телефон">
+					</fieldset>
+					<fieldset class="modal__form-group form-group">
+						<button class="modal__form-btn form-btn btn-blue">
+							<span>Заказать звонок</span>
+						</button>
+					</fieldset>
+					<div class="modal__form-info form-info">
+						Отправляя заявку, Вы соглашаетесь с
+						<a href="">политикой конфиденциальности</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal--active" id="contactModal2">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/menu-close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__title">Спасибо!</div>
+				<div class="modal__subtitle">Наш менеджер скоро Вам перезвонит.</div>
+				<div class="modal__img">
+					<img src="img/modal-img.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="contactModal3">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/menu-close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__title">Отправьте нам <br> свое резюме</div>
+				<div class="modal__subtitle">Оставьте Ваши данные и мы свяжемся с Вами</div>
+				<form class="modal__form form">
+					<fieldset class="modal__form-group form-group">
+						<input type="text" placeholder="Введите Ваше имя">
+					</fieldset>
+					<fieldset class="modal__form-group form-group">
+						<input type="tel" placeholder="Введите Ваш телефон">
+					</fieldset>
+					<fieldset class="modal__form-group form-group file-group">
+						<input type="file" placeholder="Прикрепите резюме">
+						<span>Прикрепите резюме</span>
+					</fieldset>
+					<fieldset class="modal__form-group form-group">
+						<button class="modal__form-btn form-btn btn-blue">
+							<span>Заказать звонок</span>
+						</button>
+					</fieldset>
+					<div class="modal__form-info form-info">
+						Отправляя заявку, Вы соглашаетесь с
+						<a href="">политикой конфиденциальности</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
