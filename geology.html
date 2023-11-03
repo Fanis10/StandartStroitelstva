@@ -113,7 +113,7 @@
 							</div>
 						</div>
 						<div class="nav">
-							<a href="" class="nav__item">
+							<a href="organization.html" class="nav__item">
 								<div class="nav__item-top">
 									<div class="nav__item-icon">
 										<svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +141,7 @@
 								</div>
 								<div class="nav__item-title">Организация</div>
 							</a>
-							<a href="" class="nav__item">
+							<a href="geodesy.html" class="nav__item">
 								<div class="nav__item-top">
 									<div class="nav__item-icon">
 										<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +165,7 @@
 								</div>
 								<div class="nav__item-title">Геодезия</div>
 							</a>
-							<a href="" class="nav__item nav__item--active">
+							<a href="geology.html" class="nav__item nav__item--active">
 								<div class="nav__item-top">
 									<div class="nav__item-icon">
 										<svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -193,7 +193,7 @@
 								</div>
 								<div class="nav__item-title">Геология</div>
 							</a>
-							<a href="" class="nav__item">
+							<a href="ecology.html" class="nav__item">
 								<div class="nav__item-top">
 									<div class="nav__item-icon">
 										<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +208,7 @@
 								</div>
 								<div class="nav__item-title">Экология</div>
 							</a>
-							<a href="" class="nav__item">
+							<a href="vacancy.html" class="nav__item">
 								<div class="nav__item-top">
 									<div class="nav__item-icon">
 										<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +234,7 @@
 								</div>
 								<div class="nav__item-title">Вакансии</div>
 							</a>
-							<a href="" class="nav__item">
+							<a href="contacts.html" class="nav__item">
 								<div class="nav__item-top">
 									<div class="nav__item-icon">
 										<svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,7 +455,7 @@
 							<a class="menu__number" href="tel:+7 (985) 766-53-80">+7 (985) 766-53-80</a>
 						</div>
 						<div class="menu__btns">
-							<button class="menu__btn btn-blue">
+							<button data-modal="contactModal" class="menu__btn btn-blue">
 								<span>Заказать звонок</span>
 							</button>
 							<div class="menu__socials">
@@ -469,6 +469,34 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="contactModal">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<img src="img/menu-close.svg" alt="">
+			</button>
+			<div class="modal__content">
+				<div class="modal__title">Обратный звонок</div>
+				<div class="modal__subtitle">Оставьте Ваши данные и мы свяжемся с Вами</div>
+				<form class="modal__form form">
+					<fieldset class="modal__form-group form-group">
+						<input type="text" placeholder="Введите Ваше имя">
+					</fieldset>
+					<fieldset class="modal__form-group form-group">
+						<input type="tel" placeholder="Введите Ваш телефон">
+					</fieldset>
+					<fieldset class="modal__form-group form-group">
+						<button class="modal__form-btn form-btn btn-blue">
+							<span>Заказать звонок</span>
+						</button>
+					</fieldset>
+					<div class="modal__form-info form-info">
+						Отправляя заявку, Вы соглашаетесь с
+						<a href="">политикой конфиденциальности</a>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
